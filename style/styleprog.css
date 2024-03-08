@@ -1,0 +1,76 @@
+/* TOOLS */
+.section-tools h2 {
+  margin-left: 142px;
+  font-weight: 100;
+}
+
+.section-tools h3 {
+  margin-left: 22px;
+}
+
+.tools-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 120px;
+  margin-bottom: 50px;
+}
+
+.skills-progress-1 {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.skill-name-1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(17, 246, 246);
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill-bar-1 {
+  height: 14px;
+  background: #282828;
+  border-radius: 3px;
+}
+
+.skill-per-1 {
+  height: 14px;
+  background: teal;
+  border-radius: 3px;
+  position: relative;
+  animation: fillBars 8s 1;
+}
+
+.skill-per-1::before {
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: teal;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  /* transform: translateX(25%); */
+}
+
+.skill-per-1::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: teal;
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+}
+
+@keyframes fillBars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

@@ -1,0 +1,946 @@
+/* Responsive */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navba .navba-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--background-color);
+    width: 30rem;
+    height: 100vh;
+  }
+
+  .navba .navba-nav.active {
+    right: 0;
+  }
+
+  .navba .navba-nav a {
+    color: var(--text-color);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .navba .navba-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navba .navba-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  /* Mengatur lebar maksimum elemen .about pada layar kecil */
+  .about {
+    margin-right: 0px;
+    display: block;
+    margin-top: 0px;
+  }
+
+  .about .photos {
+    margin: 150px auto 0px auto;
+  }
+
+  .about .modal-img-1 {
+    margin-top: 10px;
+    margin-left: -15px;
+  }
+
+  .modal-content-1 {
+    /* margin-top: 150px !important; */
+    padding: 40px !important;
+    padding-top: 120px !important;
+  }
+
+  .modal-content-1 h1 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  /* Mengatur gaya tampilan untuk elemen .about-teks pada layar kecil */
+  .about .about-teks {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    margin: 0px auto;
+    margin-top: -80px;
+  }
+
+  .about .about-teks .data-1 {
+    margin: 50px auto;
+  }
+
+  .about .style {
+    flex-direction: column;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .about .style .style-1 {
+    width: 240px;
+    padding: 0px 0px;
+    margin: 30px auto;
+  }
+
+  .modal-content-1 img {
+    height: 100px !important;
+    width: 180px !important;
+  }
+
+  .modal-content-1 p {
+    font-size: 12px !important;
+  }
+
+  .modal-img {
+    margin: 0px auto;
+  }
+
+  .modal-img {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+  /* service=============================== */
+
+  .service .isi {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service .tengah {
+    text-align: center;
+  }
+
+  .service .photos-service img {
+    width: 400px;
+    height: 200px;
+  }
+
+  .service .isi .left {
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .service .isi .left p {
+    margin: 20px 20px 0px 20px;
+  }
+
+  .service .isi .right {
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .service .isi .right p {
+    margin: 5px 20px 0px 20px;
+  }
+
+  .service .tengah p {
+    text-align: justify;
+    margin: 20px 53px 0px 53px;
+  }
+
+  .text-white {
+    margin: 20px 0px;
+  }
+
+  .about .photos {
+    border-radius: 24px;
+  }
+
+  .about .photos img {
+    padding-right: 100px;
+    height: 240px;
+  }
+
+  /* RESUME--------------------------------------- */
+  .resume {
+    margin-top: -90px;
+    margin-right: 0px;
+  }
+
+  .resume .section-tools {
+    margin-top: 50px;
+    margin-left: -120px;
+  }
+
+  .resume .interest-area-1 {
+    margin: 10px 110px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    margin: 0px auto;
+  }
+
+  .resume .interest-area-1 .interest-disp-1 .interest-part-1 {
+    margin: 8px 20px;
+  }
+
+  .resume
+    .interest-area-1
+    .interest-disp-1
+    .interest-part-1
+    .interest-top-1
+    h4 {
+    font-size: 10px !important;
+  }
+
+  .resume .interest-area-1 .interest-judul-1 {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  .resume .interest-area .interest-judul {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  .resume .interest-area-1 .interest-disp-1 .interest-part-1 i {
+    font-size: 40px;
+  }
+
+  .resume .interest-area .interest-disp .interest-part {
+    margin: 8px 20px;
+  }
+
+  .resume .interest-area .interest-disp .interest-part .interest-top h4 {
+    font-size: 10px !important;
+  }
+
+  .resume .interest-area .interest-disp .interest-part i {
+    font-size: 40px;
+  }
+
+  .resume .interest-area-1 .interest-disp-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+  }
+
+  .resume .interest-area-1 .interest-disp-1 .interest-part-1 .interest-top-1 {
+    margin-left: 0px;
+  }
+
+  .resume .interest-area .interest-disp .interest-part .interest-top {
+    margin-left: 0px;
+  }
+
+  .resume .interest-area {
+    margin: 10px 10px;
+    margin-bottom: 100px;
+    margin: 0px auto;
+    margin-top: 120px;
+  }
+
+  .resume .interest-area .interest-disp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+  }
+
+  .resume .interest-area-1 .interest-disp .interest-part {
+    padding: 20px 50px;
+  }
+
+  /* Portofolio-------------------------------------- */
+  .service {
+    margin-right: 0px;
+    margin-top: -20px;
+  }
+
+  .service .button-project {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 50px;
+    margin-bottom: 30px;
+  }
+
+  .service .button-project .btn-size {
+    background-color: rgb(3, 49, 53);
+    box-shadow: -5px -8px rgb(13, 98, 104);
+    border-radius: 16px;
+    padding: 3px 10px;
+    margin: 0px 15px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0s ease;
+    transition: color 0s ease;
+  }
+
+  .service .button-project .btn-size:active {
+    position: relative;
+    top: -5px;
+    left: -8px;
+    box-shadow: none;
+  }
+
+  .service .button-project .btn-size p {
+    font-weight: 500;
+  }
+
+  @keyframes btn-size {
+    0%,
+    100% {
+      color: #fff;
+      background-color: none;
+    }
+    50% {
+      color: black;
+      background-color: var(--bright-color);
+    }
+  }
+
+  .service .button-project .btn-size:active {
+    animation: btn-size 12s ease; /* Menerapkan efek delay selama 3 detik pada hover */
+  }
+
+  .service .website {
+    flex-direction: column;
+  }
+
+  .service .photos-service img {
+    width: 280px;
+    height: 190px;
+  }
+
+  .service .photos-service {
+    width: 280px;
+    height: 190px;
+    background-color: rgb(3, 49, 53);
+    box-shadow: -18px -18px rgb(13, 98, 104);
+    margin: 0px auto;
+  }
+
+  .service .mobile {
+    flex-direction: column;
+  }
+
+  .service .design {
+    flex-direction: column;
+  }
+  .service .design .teks-design {
+    margin-left: 0px;
+    text-align: justify;
+    padding-top: 30px;
+  }
+
+  .service .website .teks-website {
+    margin-left: 0px;
+    text-align: justify;
+    padding-top: 30px;
+  }
+
+  .service .mobile .teks-mobile {
+    margin-left: 0px;
+    text-align: justify;
+    padding-top: 30px;
+  }
+
+  /* -------------------------------Folio */
+  .skills {
+    margin-right: 0px;
+    margin-top: -85px;
+  }
+
+  .skills .button-project {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 50px;
+    margin-bottom: 30px;
+    padding-left: 50px;
+  }
+
+  .skills .button-project .btn-size {
+    background-color: rgb(3, 49, 53);
+    box-shadow: -5px -8px rgb(13, 98, 104);
+    border-radius: 16px;
+    padding: 3px 10px;
+    margin: 0px 15px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0s ease;
+    transition: color 0s ease;
+  }
+
+  .skills .button-project .btn-size p {
+    font-weight: 400;
+    /* font-size: 24px; */
+  }
+
+  .skills .pembungkus-shs {
+    margin-left: 70px;
+  }
+  .skills .pembungkus-collage {
+    margin-left: 70px;
+  }
+  .skills .pembungkus-expertise {
+    margin-left: 70px;
+  }
+  .skills .pembungkus-org {
+    margin-left: 70px;
+  }
+
+  .skills .pembungkus-shs.judul-1 {
+    font-size: 20px;
+  }
+
+  .skills .pembungkus-shs .judul-1 h2 {
+    font-size: 16px;
+  }
+
+  .skills .pembungkus-org .judul-1 h2 {
+    font-size: 16px;
+  }
+
+  .skills .pembungkus-collage .judul-1 h2 {
+    font-size: 16px;
+  }
+
+  .skills .pembungkus-expertise .judul-1 h2 {
+    font-size: 16px;
+  }
+
+  .skills .pembungkus-shs #website {
+    margin-top: -60px;
+  }
+
+  /* Contact============================ */
+  .contact {
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+
+  .contact .all-fill {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+  }
+  /* 
+  .all-fill .alamat-1 .font-network {
+    background-color: black;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 100%;
+  } */
+
+  .all-fill .alamat-1 .data-isi h3 {
+    font-size: 22px !important;
+    opacity: 0.6;
+    font-weight: 900;
+  }
+
+  .all-fill .alamat-1 .data-isi p {
+    font-size: 14px !important;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .all-fill .alamat-1 .data-isi {
+    margin-top: 10px !important;
+  }
+}
+
+/* ================================================= */
+
+@media (max-width: 500px) {
+  .skills .up .bayangan {
+    /* font-size: 80px; */
+    margin-top: -81px;
+  }
+
+  .skills .up {
+    text-align: center;
+    padding: 5% 0;
+    margin-top: 50px;
+  }
+
+  .html {
+    font-size: 55%;
+  }
+
+  body {
+    background-image: url(../img/W86.jpg);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    html {
+      font-size: 62.5%;
+    }
+
+    #hamburger-menu {
+      display: inline-block;
+    }
+
+    .navba .navba-nav {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      background-color: var(--background-color);
+      width: 30rem;
+      height: 100vh;
+    }
+
+    .navba .navba-nav.active {
+      right: 0;
+    }
+
+    .navba .navba-nav a {
+      color: var(--text-color);
+      display: block;
+      margin: 1.5rem;
+      padding: 0.5px;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .navba .navba-nav a::after {
+      transform-origin: 0 0;
+    }
+
+    .navba .navba-nav a:hover::after {
+      transform: scaleX(0.2);
+    }
+
+    /* Mengatur lebar maksimum elemen .about pada layar kecil */
+    .about {
+      margin-right: 0px;
+      display: block;
+      margin-top: 0px;
+    }
+
+    .about .photos {
+      margin: 130px auto 0px auto;
+    }
+
+    /* Mengatur gaya tampilan untuk elemen .about-teks pada layar kecil */
+    .about .about-teks {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: 1fr;
+      margin: 0px auto;
+      margin-top: -80px;
+    }
+
+    .about .about-teks .data-1 {
+      margin: 50px auto;
+    }
+
+    .about .style {
+      flex-direction: column;
+      text-align: center;
+      margin: 0px;
+    }
+
+    .about .style .style-1 {
+      width: 240px;
+      padding: 0px 0px;
+      margin: 30px auto;
+    }
+
+    .modal-content-1 img {
+      height: 100px !important;
+      width: 180px !important;
+    }
+
+    .modal-content-1 p {
+      font-size: 12px !important;
+    }
+
+    .modal-img {
+      margin: 0px auto;
+    }
+
+    .modal-img {
+      display: grid !important;
+      grid-template-columns: 1fr !important;
+    }
+    /* service=============================== */
+
+    .service .isi {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .service .tengah {
+      text-align: center;
+    }
+
+    .service .photos-service img {
+      width: 400px;
+      height: 200px;
+    }
+
+    .service .isi .left {
+      margin: auto;
+      margin-bottom: 50px;
+    }
+
+    .service .isi .left p {
+      margin: 20px 20px 0px 20px;
+    }
+
+    .service .isi .right {
+      margin: auto;
+      margin-bottom: 50px;
+    }
+
+    .service .isi .right p {
+      margin: 5px 20px 0px 20px;
+    }
+
+    .service .tengah p {
+      text-align: justify;
+      margin: 20px 53px 0px 53px;
+    }
+
+    .text-white {
+      margin: 20px 0px;
+    }
+
+    .about .photos {
+      border-radius: 24px;
+    }
+
+    .about .photos img {
+      padding-right: 42px;
+      height: 240px;
+      margin-left: -40px;
+    }
+
+    .about .up p {
+      font-size: 1.1rem;
+      font-weight: 200;
+      margin-top: -99px;
+    }
+    /* RESUME--------------------------------------- */
+    .resume {
+      margin-top: -90px;
+      margin-right: 0px;
+    }
+
+    .next-2:before {
+      content: ">";
+      right: 60px;
+    }
+
+    .resume .section-tools {
+      margin-top: 50px;
+      margin-left: -120px;
+    }
+
+    .resume .interest-area-1 {
+      margin: 10px 110px;
+      margin-top: 80px;
+      margin-bottom: 100px;
+      margin: 0px auto;
+    }
+
+    .resume .interest-area-1 .interest-disp-1 .interest-part-1 {
+      margin: 8px 20px;
+    }
+
+    .resume
+      .interest-area-1
+      .interest-disp-1
+      .interest-part-1
+      .interest-top-1
+      h4 {
+      font-size: 10px !important;
+    }
+
+    .resume .interest-area-1 .interest-judul-1 {
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+
+    .resume .interest-area .interest-judul {
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+
+    .resume .interest-area-1 .interest-disp-1 .interest-part-1 i {
+      font-size: 40px;
+    }
+
+    .resume .interest-area .interest-disp .interest-part {
+      margin: 8px 20px;
+    }
+
+    .resume .interest-area .interest-disp .interest-part .interest-top h4 {
+      font-size: 10px !important;
+    }
+
+    .resume .interest-area .interest-disp .interest-part i {
+      font-size: 40px;
+    }
+
+    .resume .interest-area-1 .interest-disp-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 10px;
+    }
+
+    .resume .interest-area-1 .interest-disp-1 .interest-part-1 .interest-top-1 {
+      margin-left: 0px;
+    }
+
+    .resume .interest-area .interest-disp .interest-part .interest-top {
+      margin-left: 0px;
+    }
+
+    .resume .interest-area {
+      margin: 10px 10px;
+      margin-bottom: 100px;
+      margin: 0px auto;
+      margin-top: 120px;
+    }
+
+    .resume .interest-area .interest-disp {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 10px;
+    }
+
+    .resume .interest-area-1 .interest-disp .interest-part {
+      padding: 20px 50px;
+    }
+
+    /* Portofolio-------------------------------------- */
+    .service {
+      margin-right: 0px;
+      margin-top: -20px;
+    }
+
+    .service .up .bayangan {
+      font-size: 65px;
+    }
+
+    .service .button-project {
+      margin-left: 20px !important;
+    }
+
+    .service .button-project {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin: 50px;
+      margin-bottom: 30px;
+    }
+
+    .service .button-project .btn-size {
+      background-color: rgb(3, 49, 53);
+      box-shadow: -5px -8px rgb(13, 98, 104);
+      border-radius: 16px;
+      padding: 3px 10px;
+      margin: 0px 15px;
+      text-align: center;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0s ease;
+      transition: color 0s ease;
+    }
+
+    .service .button-project .btn-size:active {
+      position: relative;
+      top: -5px;
+      left: -8px;
+      box-shadow: none;
+    }
+
+    .service .button-project .btn-size p {
+      font-weight: 500;
+    }
+
+    @keyframes btn-size {
+      0%,
+      100% {
+        color: #fff;
+        background-color: none;
+      }
+      50% {
+        color: black;
+        background-color: var(--bright-color);
+      }
+    }
+
+    .service .button-project .btn-size:active {
+      animation: btn-size 12s ease; /* Menerapkan efek delay selama 3 detik pada hover */
+    }
+
+    .service .website {
+      flex-direction: column;
+    }
+
+    .service .photos-service img {
+      width: 280px;
+      height: 190px;
+    }
+
+    .service .photos-service {
+      width: 280px;
+      height: 190px;
+      background-color: rgb(3, 49, 53);
+      box-shadow: -18px -18px rgb(13, 98, 104);
+      margin: 0px auto;
+    }
+
+    .service .mobile {
+      flex-direction: column;
+    }
+
+    .service .design {
+      flex-direction: column;
+    }
+    .service .design .teks-design {
+      margin-left: 0px;
+      text-align: justify;
+      padding-top: 30px;
+    }
+
+    .service .website .teks-website {
+      margin-left: 0px;
+      text-align: justify;
+      padding-top: 30px;
+    }
+
+    .service .mobile .teks-mobile {
+      margin-left: 0px;
+      text-align: justify;
+      padding-top: 30px;
+    }
+
+    /* -------------------------------Folio */
+    .skills {
+      margin-right: 0px;
+      margin-top: -85px;
+    }
+
+    .skills .button-project {
+      margin-left: 0px !important;
+      /* margin: 0px -10px !important ; */
+    }
+
+    .skills .up .judul {
+      margin-top: -35px;
+    }
+
+    .skills .up .bayangan {
+      margin-top: -50px;
+      font-size: 65px !important;
+    }
+
+    .skills .up p {
+      margin-top: -60px;
+    }
+
+    button-project .skills .button-project {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      margin: 50px;
+      margin-bottom: 30px;
+      padding-left: 0px;
+    }
+
+    .skills .button-project .btn-size {
+      background-color: rgb(3, 49, 53);
+      box-shadow: -5px -8px rgb(13, 98, 104);
+      border-radius: 16px;
+      padding: 3px 10px;
+      margin: 0px 6px;
+      text-align: center;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0s ease;
+      transition: color 0s ease;
+    }
+
+    .skills .button-project .btn-size p {
+      font-weight: 400;
+      /* font-size: 24px; */
+    }
+
+    .skills .pembungkus-shs {
+      margin-left: 70px;
+    }
+    .skills .pembungkus-collage {
+      margin-left: 70px;
+    }
+    .skills .pembungkus-expertise {
+      margin-left: 70px;
+    }
+    .skills .pembungkus-org {
+      margin-left: 70px;
+    }
+
+    .skills .pembungkus-shs.judul-1 {
+      font-size: 20px;
+      margin-left: -67px;
+    }
+
+    .skills .pembungkus-shs .judul-1 h2 {
+      font-size: 16px;
+      margin-left: -67px;
+    }
+
+    .skills .pembungkus-org .judul-1 h2 {
+      font-size: 16px;
+      margin-left: -67px;
+      /* margin-top: -70px; */
+    }
+
+    .skills .pembungkus-collage .judul-1 h2 {
+      font-size: 16px;
+      /* margin-top: -100px; */
+      margin-left: -67px;
+    }
+
+    .skills .pembungkus-expertise .judul-1 h2 {
+      font-size: 16px;
+      /* margin-top: -50px; */
+      margin-left: -67px;
+    }
+
+    .skills .pembungkus-shs #website {
+      margin-top: -60px;
+    }
+
+    /* Contact============================ */
+    .contact {
+      margin-right: 0px;
+      margin-top: 0px;
+    }
+
+    .contact .all-fill {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-column-gap: 10px;
+    }
+
+    .all-fill .alamat-1 .data-isi h3 {
+      font-size: 22px !important;
+      opacity: 0.6;
+      font-weight: 900;
+    }
+
+    .all-fill .alamat-1 .data-isi p {
+      font-size: 14px !important;
+      font-weight: 400;
+      color: #fff;
+    }
+
+    .all-fill .alamat-1 .data-isi {
+      margin-top: 10px !important;
+    }
+  }
+}

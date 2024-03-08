@@ -1,0 +1,140 @@
+.container-satu {
+  width: 100%;
+  padding: 35px 10%;
+}
+
+.container-satu {
+  padding-right: calc(10% - 30px);
+}
+
+main.row-satu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+}
+
+.col-satu header .title-satu {
+  font-family: Helvetica;
+  color: rgb(36, 226, 244);
+}
+
+.col-satu .title-satu h2 {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.col-satu .contents-satu {
+  padding: 0px 3px;
+  border-left: 2px solid rgb(36, 226, 244);
+}
+
+.col-satu .contents-satu .box-satu {
+  position: relative;
+  padding: 10px;
+  /* border: 1px solid #eaeaea; */
+  background-color: #05494f;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 20px;
+  /* width: 550px; */
+}
+
+.col-satu .contents-satu .box-satu:hover {
+  box-shadow: 0px 6px 14px 0px rgb(36, 226, 244);
+  border: 1px solid transparent;
+}
+
+.col-satu .contents-satu .box-satu::before {
+  content: " ";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  right: calc(100% + 22px);
+  top: 0;
+  background-color: rgb(36, 226, 244);
+  /* border: 2px solid white; */
+}
+
+.box-satu h4 {
+  position: relative;
+  color: rgb(36, 226, 244);
+  font-weight: 900;
+}
+
+.box-satu h3 {
+  font-size: 19px;
+  padding: 10px 0px 6px;
+  font-family: helvetica;
+  color: #bab9b9;
+  font-weight: 700;
+}
+
+.box-satu p {
+  line-height: 1.2;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  main.row-satu {
+    grid-template-columns: 1fr;
+  }
+
+  .row-satu .col-satu:nth-child(2) {
+    margin-top: 30px;
+  }
+}
+
+/* ----------------------------------------- */
+
+.interest-area-1 .interest-disp-1 .interest-part-1:hover {
+  box-shadow: 0px 6px 14px 0px rgb(36, 226, 244);
+  border: 1px solid transparent;
+}
+
+.interest-area-1 .interest-disp-1::before {
+  content: " ";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  right: calc(100% + 22px);
+  top: 0;
+}
+
+/* -------------------------------------------- */
+
+.interest-area .interest-disp .interest-part:hover {
+  box-shadow: 0px 6px 14px 0px rgb(36, 226, 244);
+  border: 1px solid transparent;
+}
+
+.interest-area .interest-disp::before {
+  content: " ";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  right: calc(100% + 22px);
+  top: 0;
+  /* background-color: rgb(36, 226, 244); */
+}
+
+/* ------------------------------------------------- */
+.media-icons .media-icons-1:hover {
+  box-shadow: 0px 6px 14px 0px rgb(36, 226, 244);
+  border: 1px solid transparent;
+}
+
+/* .media-icons a::before {
+  content: " ";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  right: calc(100% + 22px);
+  top: 0;
+  background-color: rgb(36, 226, 244);
+} */

@@ -1,0 +1,275 @@
+.slider {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.slider .photos {
+  position: relative;
+  height: 433px;
+  width: 500px;
+
+  margin: 80px auto 20px auto;
+}
+
+.slider .photos img {
+  top: -20px;
+  height: 433px;
+  width: 500px;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.slider .photos img.shown {
+  opacity: 1;
+}
+
+.prev:before,
+.next:before {
+  color: #000000;
+  font-size: 60px;
+  position: absolute;
+  top: 35%;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.prev:before {
+  content: "<";
+  left: 0;
+}
+
+.next:before {
+  content: ">";
+  right: 0;
+}
+@media (max-width: 480px) {
+  .slider {
+    width: 228px !important;
+    margin: 0 auto;
+  }
+
+  .slider .photos {
+    position: relative !important;
+    height: 157px !important;
+    width: 218px !important;
+    margin: 40px auto 8px auto;
+    border-radius: 0% !important;
+    margin-left: -10px !important;
+  }
+
+  .slider .photos img {
+    top: -20px;
+    height: 155px !important;
+    width: 260px !important;
+    border-radius: 0% !important;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+    margin-left: 0px;
+  }
+
+  .prev:before,
+  .next:before {
+    font-size: 25px !important;
+    top: 38% !important;
+  }
+
+  .prev:before {
+    content: "<";
+    left: 0;
+  }
+
+  .next:before {
+    content: ">";
+    right: 0;
+  }
+}
+
+/* ======================================================= */
+@media (max-width: 480px) {
+  .slider-1 {
+    width: 228px !important;
+    margin: 0 auto;
+  }
+
+  .slider-1 .photos-1 {
+    position: relative;
+    height: 150px !important;
+    width: 240px !important;
+    /* margin: 80px auto 20px auto; */
+  }
+
+  .slider-1 .photos-1 img {
+    top: -20px;
+    height: 150px !important;
+    width: 240px !important;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  .slider-1 .photos-1 img {
+    top: -20px;
+    height: 161px !important;
+    width: 208px !important;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  .prev-1:before,
+  .next-1:before {
+    font-size: 25px !important;
+    top: 27% !important;
+  }
+
+  .prev-1:before {
+    content: "<";
+    left: 0;
+  }
+
+  .next-1:before {
+    content: ">";
+    right: 36px !important;
+  }
+}
+
+.slider-1 {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.slider-1 .photos-1 {
+  position: relative;
+  height: 433px;
+  width: 500px;
+
+  margin: 80px auto 20px auto;
+}
+
+.slider-1 .photos-1 img {
+  top: -20px;
+  height: 433px;
+  width: 500px;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.slider-1 .photos-1 img.shown-1 {
+  opacity: 1;
+}
+
+.prev-1:before,
+.next-1:before {
+  color: #000000;
+  font-size: 60px;
+  position: absolute;
+  top: 35%;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.prev-1:before {
+  content: "<";
+  left: 0;
+}
+
+.next-1:before {
+  content: ">";
+  right: 0;
+}
+
+/* ------------------------------------------------------------------- */
+
+@media (max-width: 480px) {
+  .slider-2 {
+    width: 240px !important;
+    margin: 0 auto;
+  }
+
+  .slider-2 .photos-2 {
+    position: relative;
+    height: 150px !important;
+    width: 240px !important;
+    /* margin: 80px auto 20px auto; */
+  }
+
+  .slider-2 .photos-2 img {
+    top: -20px;
+    height: 161px !important;
+    width: 176px !important;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  .prev-2:before,
+  .next-2:before {
+    font-size: 25px !important;
+    top: 27% !important;
+  }
+
+  .prev-2:before {
+    content: "<";
+    left: 0;
+  }
+
+  .next-2:before {
+    content: ">";
+    right: 65px !important;
+  }
+}
+
+.slider-2 {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.slider-2 .photos-2 {
+  position: relative;
+  height: 433px;
+  width: 500px;
+  margin: 80px auto 20px auto;
+}
+
+.slider-2 .photos-2 img {
+  top: -20px;
+  height: 433px;
+  width: 500px;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.slider-2 .photos-2 img.shown-2 {
+  opacity: 1;
+}
+
+.prev-2:before,
+.next-2:before {
+  color: #000000;
+  font-size: 60px;
+  position: absolute;
+  top: 35%;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.prev-2:before {
+  content: "<";
+  left: 0;
+}
+
+.next-2:before {
+  content: ">";
+  right: 0;
+}

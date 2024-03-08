@@ -1,0 +1,62 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\User;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
+use Illuminate\Support\Facades\Hash;
+
+use Illuminate\Support\Facades\Validator;
+
+class AuthController extends Controller
+{
+
+    public function getLogin(Request $request) 
+    {
+        if(Auth::user()) {
+            return redirect()->route("admin");
+        }
+
+        return view("auth.login");
+    }
+
+    public function postLogin(Request $request) 
+    {
+        $validator = Validator::make($request->all(), [
+            "email" => 'required|string|email|max:255|exists:users',
+            "password" => 'required|string|min:6'
+        ]);
+
+        $validator->after(function ($validator) use ($request) {
+            $user = User::where('email', $request->email)->first();
+            if(!$user || !Hash::check($request->password, $user->password)) {
+                $validator->errors()->add('password','Password is incorrect');
+            } else {
+                Auth::attempt(['email' => $request->email, 'password' => $request->password], $request->has('remember'));
+            }
+        });
+
+        if($validator->fails()) {
+            return redirect()
+            ->route('login')
+            ->withErrors($validator)
+            ->withInput();
+        }
+
+        return redirect()->route("admin");
+    }
+
+    
+
+
+
+    public function getLogout(Request $request)
+    {
+        Auth::logout();
+        // return redirect()->route("login");   
+        return redirect('/');
+    }
+}
+

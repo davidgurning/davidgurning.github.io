@@ -1,0 +1,134 @@
+/* Style the modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(7, 57, 59);
+  /* height: 800px; */
+}
+
+.modal1 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(7, 57, 59);
+}
+
+.modal1 .modal-content-1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10% auto;
+  padding: 100px;
+  width: 80%;
+  max-width: 1900px;
+  position: relative;
+  background-color: rgba(0, 18, 18, 0.9);
+  box-shadow: 32px -32px rgba(4, 56, 56, 0.8);
+}
+
+/* Style the modal content */
+.modal-content-1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10% auto;
+  padding: 100px;
+  width: 80%;
+  max-width: 1900px;
+  position: relative;
+  background-color: rgba(0, 18, 18, 0.9);
+  box-shadow: 32px -32px rgba(4, 56, 56, 0.8);
+  text-align: center;
+}
+
+.modal-content-1 p {
+  color: #ffffff;
+  text-align: justify;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-content-1 h1 {
+  margin-top: -50px;
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.close-modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+}
+
+.modal-content-1 img {
+  height: 200px;
+  width: 320px;
+}
+
+.modal1 .modal-content-1 img {
+  margin-top: 20px;
+  height: 200px;
+  width: 320px;
+}
+
+.modal-content-1 img {
+  height: 200px;
+  width: 320px;
+  border-radius: 20px;
+}
+
+/* ============================= */
+.project-modal-btn {
+  background-color: rgb(4, 78, 78);
+  box-shadow: 4px -5px rgb(55, 98, 98);
+}
+
+.project-modal-btn:hover {
+  position: relative;
+  background-color: rgb(4, 78, 78);
+  box-shadow: none;
+  top: -5px;
+  right: -4px;
+}
+
+#btn-style-certif {
+  background-color: rgb(4, 78, 78);
+  box-shadow: 4px -5px rgb(55, 98, 98);
+}
+
+#btn-style-certif:hover {
+  position: relative;
+  background-color: rgb(4, 78, 78);
+  box-shadow: none;
+  top: -5px;
+  right: -4px;
+}
+
+.style-pmb {
+  text-align: center;
+  /* padding: 10px -30px; */
+  /* margin-left: 800px; */
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.style-pmb p {
+  font-weight: 600;
+  color: #ffffff;
+  padding: 5px 15px;
+  padding-bottom: 0;
+}
